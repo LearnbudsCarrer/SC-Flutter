@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:service_provider/common/theme.dart';
 import 'package:service_provider/features/my_services/my_services.dart';
 
 void main() {
@@ -12,12 +13,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        useMaterial3: true,
-      ),
+      title: 'MC provider',
+      theme:darkTheme,
       home: const MyServicesPage(),
     );
   }
