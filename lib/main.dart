@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:service_provider/common/theme.dart';
-import 'package:service_provider/features/services/createnewpassword.dart';
-import 'package:service_provider/features/services/splash_screen.dart';
+import 'package:service_provider/features/authentication/screens/createnewpassword.dart';
+import 'package:service_provider/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
