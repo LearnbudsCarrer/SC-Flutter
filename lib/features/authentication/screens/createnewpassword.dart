@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:service_provider/common/app_colors.dart';
-import 'package:service_provider/features/services/splash_screen.dart';
+import 'package:service_provider/splash_screen.dart';
 import 'package:slide_to_act/slide_to_act.dart';
 
 class AppColors {
