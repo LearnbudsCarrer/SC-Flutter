@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:service_provider/common/theme.dart';
-import 'package:service_provider/features/my_services/my_services.dart';
+import 'package:service_provider/services/createnewpassword.dart';
+import 'package:service_provider/services/splash_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -9,19 +10,13 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
-  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'MC provider',
-      theme:darkTheme,
-      home: const MyServicesPage(),
+      theme: darkTheme,
+      home: CreateNewPasswordScreen(),
     );
   }
 }
-
-
-
-
-
