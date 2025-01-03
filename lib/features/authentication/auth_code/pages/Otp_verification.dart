@@ -5,7 +5,6 @@ import 'package:service_provider/features/authentication/auth_code/widget/Number
 import 'package:service_provider/features/authentication/auth_code/widget/_SliderWithCircleAvatarState.dart';
 import 'package:service_provider/features/authentication/auth_code/widget/appbar.dart';
 
-
 class OTPScreen extends StatelessWidget {
   const OTPScreen({super.key});
 
@@ -17,7 +16,9 @@ class OTPScreen extends StatelessWidget {
         color: appColors.backgroundColor,
         child: Column(
           children: [
-           Appbar(),
+            Appbar(
+              AppName: "OTP VERIFICATION",
+            ),
             SizedBox(
               height: 75,
             ),
@@ -50,16 +51,9 @@ class OTPScreen extends StatelessWidget {
             SizedBox(
               height: 40,
             ),
-            Container(
-                width: 350,
-                height: 60,
-                child: TextButton(
-                  onPressed: () {},
-                  child: SliderWithCircleAvatar(),
-                  style: ButtonStyle(
-                    backgroundColor: WidgetStatePropertyAll(Colors.black),
-                  ),
-                )),
+         SliderWithCircleAvatar(
+                SlindeName: "Verify",
+              ),
             SizedBox(
               height: 50,
             ),

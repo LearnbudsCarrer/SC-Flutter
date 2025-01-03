@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:service_provider/common/theme.dart';
 import 'package:service_provider/features/authentication/auth_code/pages/Otp_verification.dart';
+import 'package:service_provider/features/authentication/auth_login/Pages/Password_Confirm.dart';
 import 'package:service_provider/features/authentication/screens/createnewpassword.dart';
 import 'package:service_provider/splash_screen.dart';
 
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'MC provider',
       theme: darkTheme,
-      home: OTPScreen(),
+      home: passwordConfirm(),//OTPScreen //passwordConfirm
     );
   }
 }
