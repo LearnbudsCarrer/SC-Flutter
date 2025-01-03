@@ -33,7 +33,7 @@ class TransactionPage extends StatelessWidget {
                       fontSize: 16.0,
                     ),
                   ),
-                  const SizedBox(height: 4.0), // Spacing between title and subtitle
+                  const SizedBox(height: 4.0), 
                   const Text(
                     'Web Designer',
                     style: TextStyle(
@@ -41,7 +41,7 @@ class TransactionPage extends StatelessWidget {
                       fontSize: 14.0,
                     ),
                   ),
-                  const SizedBox(height: 8.0), // Spacing between subtitle and Paid container
+                  const SizedBox(height: 8.0), 
                   Container(
                     padding: const EdgeInsets.symmetric(
                       horizontal: 12.0,
