@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:service_provider/common/theme.dart';
 
 class Appbar extends StatelessWidget {
-  const Appbar({super.key});
+  String AppName ;
+   Appbar({super.key,required this.AppName});
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +12,7 @@ class Appbar extends StatelessWidget {
               height: 129,
               width: double.infinity,
               child: Padding(
-                padding: const EdgeInsets.only(left: 15.0, top: 10),
+                padding: const EdgeInsets.only(left: 15.0, top: 30),
                 child: Row(
                   children: [
                     SizedBox(
@@ -40,10 +41,10 @@ class Appbar extends StatelessWidget {
                     ),
                     Container(
                       padding: EdgeInsets.only(left: 14.21),
-                      width: 190,
+                      width: 250,
                       height: 30,
                       child: Text(
-                        "OTP VERIFICATION",
+                       AppName,
                         style: TextStyle(
                             color: appColors.appWhiteColor,
                             fontSize: 20,
